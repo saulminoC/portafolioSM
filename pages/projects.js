@@ -88,7 +88,7 @@ export default function Projects() {
       <div className="flex flex-col min-h-screen">
         <Header />
 
-        <main className="flex-grow max-w-7xl mx-auto px-6 py-12">
+        <main className="pt-20 flex-grow max-w-7xl mx-auto px-6 py-12">
           <h1 className="text-5xl font-extrabold mb-10 text-center text-gray-900">
             Mis Proyectos
           </h1>
