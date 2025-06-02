@@ -30,7 +30,7 @@ const services = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-10 w-10 text-blue-600"
+        className="h-8 w-8 md:h-10 md:w-10 text-blue-600"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -55,7 +55,7 @@ const services = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-10 w-10 text-green-600"
+        className="h-8 w-8 md:h-10 md:w-10 text-green-600"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -76,7 +76,7 @@ const services = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-10 w-10 text-yellow-500"
+        className="h-8 w-8 md:h-10 md:w-10 text-yellow-500"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -129,28 +129,28 @@ export default function Home() {
 
       <Header />
 
-      <main className="max-w-7xl mx-auto px-6 py-12">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         {/* Hero */}
-        <section className="text-center max-w-4xl mx-auto">
-          <h1 className="text-6xl font-extrabold mb-6 leading-tight tracking-tight text-gray-900">
+        <section className="text-center max-w-3xl mx-auto px-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 leading-tight tracking-tight text-gray-900">
             Hola, soy{" "}
             <span className="text-blue-600">Saúl Mino Cabrera</span>
           </h1>
-          <p className="text-xl text-gray-700 mb-10">
-            Desarrollo frontend moderno con React, Next.js, Tailwind CSS, y backend robusto con PHP y MySQL. Además, brindo soporte técnico confiable.
+          <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-10">
+           hola Desarrollo frontend moderno con React, Next.js, Tailwind CSS, y backend robusto con PHP y MySQL. Además, brindo soporte técnico confiable.
           </p>
 
-          <div className="flex justify-center gap-6">
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="/cv.pdf"
               download
-              className="inline-block px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold shadow-md hover:bg-blue-700 transition"
+              className="w-full sm:w-auto px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold shadow-md hover:bg-blue-700 transition text-center"
             >
               Descargar CV
             </a>
             <a
               href="/projects"
-              className="inline-block px-8 py-4 border border-blue-600 text-blue-600 rounded-lg font-semibold shadow-md hover:bg-blue-50 transition"
+              className="w-full sm:w-auto px-6 py-3 border border-blue-600 text-blue-600 rounded-lg font-semibold shadow-md hover:bg-blue-50 transition text-center"
             >
               Ver Proyectos
             </a>
@@ -158,7 +158,7 @@ export default function Home() {
         </section>
 
         {/* Services */}
-        <section className="mt-20 grid md:grid-cols-3 gap-8">
+        <section className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           {services.map((service, i) => (
             <article
               key={i}
@@ -175,12 +175,12 @@ export default function Home() {
         </section>
 
         {/* Projects */}
-        <section className="mt-24 max-w-5xl mx-auto">
-          <h2 className="text-4xl font-bold mb-8 text-center">
+        <section className="mt-24 max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center">
             Proyectos Destacados
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {projects.map((project, i) => (
               <a
                 key={i}
@@ -188,7 +188,7 @@ export default function Home() {
                 className="block border rounded-lg p-6 shadow hover:shadow-xl transition transform hover:-translate-y-1"
                 aria-label={`Ver proyecto ${project.title}`}
               >
-                <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
+                <h3 className="text-xl sm:text-2xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-700">{project.description}</p>
                 <div className="mt-4 flex items-center text-blue-600 font-semibold">
                   Ver más <ChevronRightIcon className="h-5 w-5 ml-1" />
@@ -199,8 +199,8 @@ export default function Home() {
         </section>
 
         {/* Testimonials */}
-        <section className="mt-24 max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8">Testimonios</h2>
+        <section className="mt-24 max-w-3xl mx-auto text-center px-4">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8">Testimonios</h2>
           <div className="space-y-8">
             {testimonials.map((t, i) => (
               <blockquote
