@@ -137,7 +137,7 @@ export default function Home() {
             <span className="text-blue-600">Saúl Mino Cabrera</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-10">
-           hola Desarrollo frontend moderno con React, Next.js, Tailwind CSS, y backend robusto con PHP y MySQL. Además, brindo soporte técnico confiable.
+            Desarrollo frontend moderno con React, Next.js, Tailwind CSS, y backend robusto con PHP y MySQL. Además, brindo soporte técnico confiable.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
